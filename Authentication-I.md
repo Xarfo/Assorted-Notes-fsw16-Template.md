@@ -17,7 +17,10 @@ There are also three factors to take into account:
 
 Rule number one: Do not store password in plain text. There are mainly two ways of storing passwords:
   * Encryption:
-    * Two way function that is reversible, meaninig it can be decrypted to       get the orginal string if you have the key.
+    * Two way function that is reversible, meaninig it can be decrypted to      get the orginal string if you have the key. The first step is the 
+      `plain text + private key = encrypted password`
+      `encrypted + key = original password`  
+
        
 
 ### Bcrypt
