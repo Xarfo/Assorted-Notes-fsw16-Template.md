@@ -32,3 +32,16 @@ The length of the password alone does not suffice, passwords must also be suffic
 ### Bcrypt
 
 Bcrypt is a library on NPM that makes it easy to `hash` and `compare` passwords in Node enviroment.
+
+Import :
+
+`const bcrypt = require('bcryptjs');`
+
+Hash Password :
+
+   ```const credentials = req.body;
+
+    const hash = bcrypt.hashSync(credentials.password, 14);
+
+    credentials.password = hash; ```
+   
