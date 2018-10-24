@@ -35,7 +35,8 @@ Bcrypt is a library on NPM that makes it easy to `hash` and `compare` passwords 
 
 Import :
 
-`const bcrypt = require('bcryptjs');`
+```const bcrypt = require('bcryptjs');
+```
 
 Hash Password :
 
@@ -44,5 +45,18 @@ Hash Password :
 
     const hash = bcrypt.hashSync(credentials.password, 14);
 
-    credentials.password = hash; ```
+    credentials.password = hash; 
+    ```
+
+Password Verification"
+
+```
+const credentials = req.body;
+
+// find the user in the database by it's username then
+if (!user || !bcrypt.compareSync(credentials.password, user.password)) {
+  return res.status(401).json({ error: 'Incorrect credentials' });
+}
+
+```
    
