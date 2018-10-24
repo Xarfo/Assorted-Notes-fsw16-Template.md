@@ -31,8 +31,7 @@ Password Strength
 
 The length of the password alone does not suffice, passwords must also be sufficiently complex.
 
-## Bcrypt
----
+# Bcrypt
 
 Bcrypt is a library on NPM that makes it easy to `hash` and `compare` passwords in Node enviroment.
 
