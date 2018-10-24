@@ -13,7 +13,8 @@ There are also three factors to take into account:
   * Password strength
   * Brute-force safeguards
 
-### Password Storage
+Password Storage
+---
 
 Rule number one: Do not store password in plain text. There are mainly two ways of storing passwords:
   * Encryption:
@@ -25,21 +26,23 @@ Rule number one: Do not store password in plain text. There are mainly two ways 
   * Key Derivation Functions:
      `[hash] + [time] = [Key Derivation Function]`   
        
-### Password Strength
+Password Strength
+---
 
 The length of the password alone does not suffice, passwords must also be sufficiently complex.
 
-### Bcrypt
+## Bcrypt
+---
 
 Bcrypt is a library on NPM that makes it easy to `hash` and `compare` passwords in Node enviroment.
 
-Import :
+Import 
 ---
 ```
 const bcrypt = require('bcryptjs');
 ```
 
-Hash Password :
+Hash Password 
 ---
 ```
 const credentials = req.body;
@@ -48,7 +51,7 @@ credentials.password = hash;
 ```
     
 
-Password Verification :
+Password Verification 
 ---
 ```
 const credentials = req.body;
