@@ -58,5 +58,6 @@ const credentials = req.body;
 if (!user || !bcrypt.compareSync(credentials.password, user.password)) {
   return res.status(401).json({ error: 'Incorrect credentials' });
 }
+
 ```
    
