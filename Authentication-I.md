@@ -47,7 +47,8 @@ Hash Password :
     const hash = bcrypt.hashSync(credentials.password, 14);
 
     credentials.password = hash; 
-    ```
+    
+    
 
 Password Verification:
 ---
