@@ -39,7 +39,8 @@ Import :
 
 Hash Password :
 
-   ```const credentials = req.body;
+   ```
+    const credentials = req.body;
 
     const hash = bcrypt.hashSync(credentials.password, 14);
 
