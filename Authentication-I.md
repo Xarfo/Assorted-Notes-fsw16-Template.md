@@ -17,11 +17,17 @@ There are also three factors to take into account:
 
 Rule number one: Do not store password in plain text. There are mainly two ways of storing passwords:
   * Encryption:
-    * Two way function that is reversible, meaninig it can be decrypted to      get the orginal string if you have the key. The first step is the 
+     Two way function that is reversible, meaninig it can be decrypted to      get the orginal string if you have the key. The first step is the 
       `plain text + private key = encrypted password`
       `encrypted + key = original password`  
-
+  * Hashes:
+     One step function that is irreversible `parameters + input = hash`
+  * Key Derivation Functions:
+     `[hash] + [time] = [Key Derivation Function]`   
        
+### Password Strength
+
+The length of the password alone does not suffice, passwords must also be sufficiently complex.
 
 ### Bcrypt
 
