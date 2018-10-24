@@ -41,24 +41,20 @@ const bcrypt = require('bcryptjs');
 
 Hash Password :
 ---
-   ```
-    const credentials = req.body;
-
-    const hash = bcrypt.hashSync(credentials.password, 14);
-
-    credentials.password = hash; 
-    ```
+```
+const credentials = req.body;
+const hash = bcrypt.hashSync(credentials.password, 14);
+credentials.password = hash; 
+```
     
 
 Password Verification :
 ---
-    ```
-    const credentials = req.body;
-
-    <!-- // find the user in the database by it's username then -->
-    if (!user || !bcrypt.compareSync(credentials.password, user.password)) {
-    return res.status(401).json({ error: 'Incorrect credentials' });
-    }
-
-    ```
+```
+const credentials = req.body;
+<!--  find the user in the database by it's username then -->
+if (!user || !bcrypt.compareSync(credentials.password, user.password)) {
+return res.status(401).json({ error: 'Incorrect credentials' });
+}
+```
    
