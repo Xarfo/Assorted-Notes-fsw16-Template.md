@@ -47,18 +47,18 @@ Hash Password :
     const hash = bcrypt.hashSync(credentials.password, 14);
 
     credentials.password = hash; 
-    
+    ```
     
 
-Password Verification:
+Password Verification :
 ---
     ```
     const credentials = req.body;
 
-    // find the user in the database by it's username then
+    <!-- // find the user in the database by it's username then -->
     if (!user || !bcrypt.compareSync(credentials.password, user.password)) {
     return res.status(401).json({ error: 'Incorrect credentials' });
     }
 
-```
+    ```
    
