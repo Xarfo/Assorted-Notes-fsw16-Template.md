@@ -22,14 +22,14 @@ Rule number one: Do not store password in plain text. There are mainly two ways 
       `plain text + private key = encrypted password`
       `encrypted + key = original password`  
   * Hashes:
-     One step function that is irreversible `parameters + input = hash`
+     One step function that is irreversible `parameters + input = hash`. If passwords are going to be stored they must be hashed.
   * Key Derivation Functions:
      `[hash] + [time] = [Key Derivation Function]`   
        
 Password Strength
 ---
 
-The length of the password alone does not suffice, passwords must also be sufficiently complex.
+The length of the password alone does not suffice, passwords must also be sufficiently complex. GRC website to verify the strength of your password.
 
 # Bcrypt
 ---
