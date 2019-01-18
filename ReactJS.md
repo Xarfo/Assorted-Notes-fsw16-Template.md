@@ -1,4 +1,4 @@
-# DEV281x - Introduction to ReactJS
+# Introduction to ReactJS
 
 
 # Module 0 | Introduction ✔
